@@ -1,0 +1,20 @@
+spring:
+  profiles:
+    active: local
+    
+---
+
+spring:
+  profiles: local
+  devtools:
+    livereload:
+      enabled: true
+  thymeleaf:
+    cache: false
+    mode: LEGACYHTML5
+  mvc:
+    contentnegotiation:
+      favor-parameter: true
+      favor-path-extension: true
+      media-types:
+        xls: application/vnd.ms-excel
