@@ -43,7 +43,7 @@ public class CommonWebSecurityConfig extends WebSecurityConfigurerAdapter {
 		
 		http
 			.authorizeRequests()
-			.antMatchers("/main/**")
+			.antMatchers("/main", "/main/**")
 			.hasAnyRole("ADMIN");
 		
 		http.authorizeRequests().anyRequest().authenticated();
