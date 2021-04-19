@@ -21,3 +21,7 @@ spring:
   redis:
     host: ec2-54-180-150-146.ap-northeast-2.compute.amazonaws.com
     port: 6379
+
+logging:
+  path: /log
+  file: my.log
