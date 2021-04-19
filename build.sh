@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ `docker images | grep ${GIT_COMMIT} | wc -l` eq 1 ] then
+if [ `docker images | grep ${GIT_COMMIT} | wc -l` -eq 1 ]; then
 	exit 0
 fi
 
