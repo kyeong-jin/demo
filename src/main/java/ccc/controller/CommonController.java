@@ -12,6 +12,6 @@ public class CommonController {
 	@GetMapping("/main")
 	public String dashboard1(Model model, HttpSession session) {
         model.addAttribute("sessionId", session.getId());
-		return "/main";
+		return "main";
 	}
 }
