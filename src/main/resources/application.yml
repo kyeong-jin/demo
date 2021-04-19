@@ -23,5 +23,7 @@ spring:
     port: 6379
 
 logging:
+  level:
+    root: debug
   path: /log
   file: my.log
