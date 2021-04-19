@@ -24,6 +24,7 @@ spring:
 
 logging:
   level:
-    root: debug
+    ccc:
+      controller: debug
   path: /log
   file: my.log
